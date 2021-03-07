@@ -88,9 +88,6 @@ $(document).ready(function () {
 
 
 
-
-
-
     function updatedForecast(searchVal) {
 
         $.ajax({
