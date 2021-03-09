@@ -18,9 +18,9 @@ $(document).ready(function () {
     var currentDate = new Date().toLocaleDateString("en-US");
 
     const key = "f33cb88be12584833951fc21673d4cde";
-    const callUrl = "http://api.openweathermap.org/data/2.5/weather?q=";
-    const callUrl2 = "http://api.openweathermap.org/data/2.5/forecast?q=";
-    const callUrl3 = "http://api.openweathermap.org/data/2.5/uvi?"
+    const callUrl = "https://api.openweathermap.org/data/2.5/weather?q=";
+    const callUrl2 = "https://api.openweathermap.org/data/2.5/forecast?q=";
+    const callUrl3 = "https://api.openweathermap.org/data/2.5/uvi?"
     // function load() {
 
     // }
@@ -69,7 +69,7 @@ $(document).ready(function () {
             cityName.textContent = city.name + "(" + currentDate + ")";
 
             const iconName = city.weather[0].icon;
-            const appIcon = `<img src="http://openweathermap.org/img/wn/${iconName}@2x.png"id="icons">`;
+            const appIcon = `<img src="https://openweathermap.org/img/wn/${iconName}@2x.png"id="icons">`;
 
             currentTemp.textContent = ("Temperature:  " + city.main.temp + ("º F"));
             currentHumidity.textContent = ("Humidity:  " + city.main.humidity + ("%"));
@@ -136,6 +136,7 @@ $(document).ready(function () {
     }
 
 })
+
 
 
 
